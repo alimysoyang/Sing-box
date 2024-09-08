@@ -13,13 +13,13 @@ reading() { read -p "$(red "$1")" "$2"; }
 export LC_ALL=C
 USERNAME=$(whoami)
 HOSTNAME=$(hostname)
-export UUID=${UUID:-'bc97f674-c578-4940-9234-0a1da46041b9'}
+export UUID=${UUID:-'19846cc1-9d83-4cfe-8fb0-da497d2ba84b'}
 export NEZHA_SERVER=${NEZHA_SERVER:-''} 
 export NEZHA_PORT=${NEZHA_PORT:-'5555'}     
 export NEZHA_KEY=${NEZHA_KEY:-''} 
 export ARGO_DOMAIN=${ARGO_DOMAIN:-''}   
 export ARGO_AUTH=${ARGO_AUTH:-''}
-export CFIP=${CFIP:-'www.visa.com.tw'} 
+export CFIP=${CFIP:-'pl1-speedtest.tools.gcore.com'} 
 export CFPORT=${CFPORT:-'443'} 
 
 [[ "$HOSTNAME" == "s1.ct8.pl" ]] && WORKDIR="domains/${USERNAME}.ct8.pl/logs" || WORKDIR="domains/${USERNAME}.serv00.net/logs"
